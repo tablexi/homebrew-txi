@@ -4,4 +4,9 @@ class TxiCli < Formula
   depends_on 'kubectl'
 
   head "git@github.com:tablexi/txi-cli.git", using: :git, branch: 'main'
+
+  def install
+    system "bundle install --path vendor/bundle"
+    bin.install "txi"
+  end
 end
