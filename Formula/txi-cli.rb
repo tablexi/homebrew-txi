@@ -8,6 +8,6 @@ class TxiCli < Formula
   def install
     # system "bundle install --path vendor/bundle"
     bin.install "bin/txi"
-    prefix.install Dir["lib/*"]
+    prefix.install "lib"
   end
 end
