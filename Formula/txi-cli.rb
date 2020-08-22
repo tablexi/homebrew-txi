@@ -3,7 +3,7 @@ class TxiCli < Formula
   depends_on 'docker'
   depends_on 'kubectl'
 
-  head "https://github.com/tablexi/txi-cli.git"
+  head "git@github.com:eurydyce/MDANSE.git"
 
   def install
     bin.install 'txi'
