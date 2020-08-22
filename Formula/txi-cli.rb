@@ -5,5 +5,7 @@ class TxiCli < Formula
 
   head "https://github.com/tablexi/txi-cli.git"
 
-  bin.install 'txi'
+  def install
+    bin.install 'txi'
+  end
 end
