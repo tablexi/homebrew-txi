@@ -1,5 +1,5 @@
 class TxiCli < Formula
-  depends_on 'aws-cli'
+  depends_on 'awscli'
   depends_on 'docker'
   depends_on 'kubectl'
 
