@@ -6,6 +6,6 @@ class TxiCli < Formula
   head "git@github.com:tablexi/txi-cli.git", using: :git, branch: 'main'
 
   def install
-    bin.install 'txi'
+    bin.install 'bin/txi'
   end
 end
