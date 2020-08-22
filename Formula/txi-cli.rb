@@ -7,6 +7,6 @@ class TxiCli < Formula
 
   def install
     # system "bundle install --path vendor/bundle"
-    bin.install "txi"
+    bin.install "bin/txi"
   end
 end
