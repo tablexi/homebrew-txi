@@ -6,7 +6,8 @@ class TxiCli < Formula
   head "git@github.com:tablexi/txi-cli.git", using: :git, branch: 'main'
 
   def install
-    # system "bundle install --path vendor/bundle"
+    system "gem install bundler"
+    system "bundle install --path vendor/bundle"
     bin.install "bin/txi"
     prefix.install "lib"
   end
