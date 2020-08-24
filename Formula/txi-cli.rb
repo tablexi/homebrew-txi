@@ -6,7 +6,7 @@ class TxiCli < Formula
   head "git@github.com:tablexi/txi-cli.git", using: :git, branch: 'main'
 
   def install
-    system "xcode-select -s /Applications/Xcode.app/Contents/Developer"
+    system "sudo xcode-select -s /Applications/Xcode.app/Contents/Developer"
     system "bundle install"
     bin.install "bin/txi"
     prefix.install "lib"
