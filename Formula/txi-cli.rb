@@ -7,8 +7,8 @@ class TxiCli < Formula
 
   def install
     ENV["GEM_HOME"] = libexec
-    system "gem" "install" "bundler"
-    system "bundle", "install", "--path", "vendor/bundle"
+    system "gem install bundler"
+    system "bundle install --path vendor/bundle"
     bin.install "bin/txi"
     prefix.install "lib"
   end
