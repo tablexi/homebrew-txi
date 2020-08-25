@@ -6,7 +6,7 @@ class TxiCli < Formula
   head "git@github.com:tablexi/txi-cli.git", using: :git, branch: 'main'
 
   def install
-    bin.install "bin/txi"
-    prefix.install Dir['*']
+    system "gem build txi-cli.gemspec"
+    system "gem install txi-cli*.gem"
   end
 end
