@@ -7,6 +7,6 @@ class TxiCli < Formula
 
   def install
     system "gem build txi-cli.gemspec"
-    system "gem install txi-cli*.gem"
+    system "gem install txi-cli*.gem --install-dir #{prefix}"
   end
 end
