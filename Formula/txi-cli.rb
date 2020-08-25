@@ -21,6 +21,7 @@ class TxiCli < Formula
              "--install-dir", prefix,
              "--bindir", bin
 
+    brew_gem_prefix = Dir[File.expand_path(File.join(prefix, "gems", "#{name}-*"))].first
     gemspec = Gem::Specification::load("txi-cli.gemspec")
     ruby_libs = Dir.glob("#{prefix}/gems/*/lib")
     gemspec.executables.each do |exe|
