@@ -2,6 +2,7 @@ class TxiCli < Formula
   depends_on 'awscli'
   depends_on 'docker'
   depends_on 'kubectl'
+  depends_on 'pet'
   depends_on 'ruby'
 
   head "git@github.com:tablexi/txi-cli.git", using: :git, branch: 'main'
